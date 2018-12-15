@@ -1,0 +1,45 @@
+{
+    "name": "srt/laravel-sms",
+    "description": "Laravel短信发送包",
+    "keywords": [
+      "laravel-sms",
+      "laravel",
+      "sms"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "srt",
+            "email": "sgssxf@126.com"
+        }
+    ],
+    "require": {
+      "php": "^7.1",
+      "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Sgssxf\\Sms\\": "src"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Sgssxf\\Sms\\Tests\\": "tests"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Sgssxf\\Sms\\SmsServiceProvider"
+        ]
+      }
+    },
+    "config": {
+      "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
